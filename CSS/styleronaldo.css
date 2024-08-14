@@ -1,0 +1,30 @@
+/* Definindo o background para toda a página */
+body {
+    background-color: #f0ebd8;
+}
+
+/* Estilo personalizado para o texto de destaque */
+.fraseefeito {
+    color: #e57a44;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Estilizando os ícones sociais no rodapé */
+footer {
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+/* Ajustes de margem nos ícones da navbar */
+.nav-icons a {
+   float: right;
+}
+.tamicones{
+    width: 100px;
+}
+.cardss{
+    background-color: #f0ebd8;
+}

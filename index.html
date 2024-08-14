@@ -1,72 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Croissant</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styleronaldo.css">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark navcor">
-            <!-- Logo da marca -->
-            <nav class="navbar navbar-light navcor">
-                <a class="navbar-brand" href="#">
-                    <a href="Index.html"><img
-                            src="../CursoWeBSenai/Sprint 1/Imagens/lana-del-rey-2000-d076f7a4c6494f3f8fdcc9ec99fbab12.jpg"
-                            height="60" width="100" alt=""></a>
-                </a>
-
-            </nav>
-
-            <!-- Botão para responsivo -->
-            <button class="navbar-toggler bgbotoes" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon bgbotoes"></span>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #505b4b;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Imagens/Sprint 3/logo/creme.png" alt="Le Croissant Logo" width="50" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-
-            <!-- Botões -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item;">
-                        <a class="nav-link" style="color: #FB8500;" href="index.html">Início</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: #f0ebd8;">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="color: #FFC430;" href="nossoespaço.html">Nosso espaço</a>
+                        <a class="nav-link" href="#" style="color: #f0ebd8;">MENU</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="color: #FFC430;" href="cardapio.html">Cardápio</a>
+                        <a class="nav-link" href="#" style="color: #f0ebd8;">SOBRE NÓS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" style="color: #FFC430;" href="sobrenós.html">Sobre a marca</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="color: #FFC430;" href="cadastro.html" target="_blank">Seja um
-                            cliente</a>
+                        <a class="nav-link" href="#" style="color: #f0ebd8;">SEJA UM CLIENTE</a>
                     </li>
                 </ul>
+                <div class="nav-icons d-flex">
+                    <a href="#"><i class="bi bi-bag fs-3" style="color: #f0ebd8;"></i></a>
+                    <a href="#"><i class="bi bi-person fs-3" style="color: #f0ebd8;"></i></a>
+                </div>
 
             </div>
+        </div>
+    </nav>
 
-            <!-- Logo da marca -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item;">
-                        <a class="nav-link" style="color: #FB8500;" href="index.html">Início</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" style="color: #FFC430;" href="#mim">Nosso espaço</a>
-                    </li>
-                </ul>
-
+    <!-- Carrossel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="imagens/Sprint 3/bannerexemplo.jpeg" class="d-block w-100" alt="Imagem 1">
             </div>
-        </nav>
-    </header>
+            <div class="carousel-item">
+                <img src="imagens/Sprint 3/bannerrebranding.jpeg" class="d-block w-100" alt="Imagem 2">
+            </div>
+            <div class="carousel-item">
+                <img src="imagens/Sprint 3/bannerexemplo.jpeg" class="d-block w-100" alt="Imagem 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
 
+    <div style="background-color: #505b4b;" class="p-5">
+        <h2 style="color: #f0ebd8;">A LE CROISSANT</h2>
+        <p style="color: #f0ebd8;">A cafeteria “Le Croissant” é inspirada na gastronomia francesa. Oferece café da
+            manhã, brunch e café da
+            tarde, com comidas leves e gourmet. Temos como missão nos diferenciar de outras cafeterias, trazendo o
+            estilo e gastronomia francesas unido ao toque caseiro e retrô de nosso ambiente.</p>
+    </div>
+
+    <div style="background-color: #f0ebd8;">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card" style="background-color: #b76943;">
+                        <img src="Imagens/Sprint 1 e 2/macaron.jpg" class="card-img-top" alt="macarrons">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #f0ebd8;">Macarrons</h5>
+                            <p class="card-text" style="color: #f0ebd8;">R$18,00</p>
+                            <a href="#" class="btn btdoc" style="background-color: #505b4b; color: #f0ebd8;">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card" style="background-color: #b76943;">
+                        <img src="Imagens/Sprint 1 e 2/macaron.jpg" class="card-img-top" alt="macarrons">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #f0ebd8;">Macarrons</h5>
+                            <p class="card-text" style="color: #f0ebd8;">R$18,00</p>
+                            <a href="#" class="btn btdoc" style="background-color: #505b4b; color: #f0ebd8;">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card" style="background-color: #b76943;">
+                        <img src="Imagens/Sprint 1 e 2/macaron.jpg" class="card-img-top" alt="macarrons">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #f0ebd8;">Macarrons</h5>
+                            <p class="card-text" style="color: #f0ebd8;">R$18,00</p>
+                            <a href="#" class="btn btdoc" style="background-color: #505b4b; color: #f0ebd8;">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                    <div class="card" style="background-color: #b76943;">
+                        <img src="Imagens/Sprint 1 e 2/macaron.jpg" class="card-img-top" alt="macarrons">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #f0ebd8;">Macarrons</h5>
+                            <p class="card-text" style="color: #f0ebd8;">R$18,00</p>
+                            <a href="#" class="btn btdoc" style="background-color: #505b4b; color: #f0ebd8;">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+
+
+    <!-- Rodapé do site -->
+    <footer class="text-center" style="background-color: #929f90;">
+        <div class="container">
+            <p>Le Croissant © 2024</p>
+            <div class="social-icons">
+                <a href="#"><i class="bi bi-instagram fs-3" style="color: #392b1e;"></i></a>
+                <a href="#"><i class="bi bi-whatsapp fs-3" style="color: #392b1e;"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    
 </body>
 
 </html>

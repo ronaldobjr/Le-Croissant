@@ -1,0 +1,470 @@
+/*Cor e margens do corpo todo*/
+body, html{
+    margin: 0;
+    padding: 0;
+    background-color: #dbe3d3;
+    height: 100%;}
+/*características dos botões*/
+button{
+    background-color: #e4c4c3;
+    border-color: #dbe3d3;
+    font-family: 'Times New Roman', Times, serif;
+    color: #9c632a;
+    font-size: medium;
+    cursor: pointer;
+}
+/*.atrasbotoes{
+    background-color: hwb(2 76% 11%);
+    justify-self: center;
+}*/
+/*Barra dos botões*/
+.top{
+    padding: 25px;
+    text-align: center;
+    background-color: #e4c4c3;
+    height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/*borda dos spans (botões da barra)*/
+.borda{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #e4c4c3;
+    background-color: #e4c4c3;
+    padding: 10px;
+    color: #9c632a;
+    text-decoration: none;
+    font-size:large;
+    cursor: pointer;
+}
+.borda:hover{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #e4c4c3;
+    background-color: #d8b2b0;
+    padding: 10px;
+    color: #9c632a;
+    text-decoration: none;
+    font-size:large;
+    cursor: pointer;
+}
+/*características da logotipo*/
+.logotipo{
+    float: left;
+    padding: 2px;
+    margin: 5px;
+}
+/*características da barra de navegação*/
+.barra{
+    background-color: #e4c4c3;
+    line-height: normal;
+
+}
+.clear{
+    clear: both;
+}
+/*características dos spans de login e sacola*/
+.loginesacola{
+    padding: 25px;
+    text-align: right;
+    background-color: #dbe3d3;
+    height: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.iconeles{
+    float: left;
+}
+/*bordas spans login e sacola*/
+.bordales{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #dbe3d3;
+    background-color: #dbe3d3;
+    padding: 10px;
+    color: #9c632a;
+    text-decoration: none;
+    font-size:large;
+}
+.bordales:hover{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #dbe3d3;
+    background-color: #c7cec1;
+    padding: 10px;
+    color: #9c632a;
+    text-decoration: none;
+    font-size:large;
+}
+/*características do login e do footer*/
+footer{
+    background-color: #e4c4c3;
+    align-content: center;
+}
+/*característica fotos do cardápio*/
+td{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/*fontes - características*/
+h3, h2, h1{
+    color: #9c632a;
+}
+/*características do mapa localizado no footer*/
+.footermapa{
+    float: left;
+    margin: 10px 120px;
+}
+/*características da marca registrada*/
+.marcaregistrada{
+    text-align: center;
+}
+/*características do link das redes*/
+.instaewhats{
+    float: left;
+    padding: 10px;
+    margin-left: 15px;
+}
+/*características do footer apenas do index*/
+.footermapaindex{
+    float: left;
+    margin: 10px 150px;
+}
+/*características do "banner" de login*/
+#principal{
+    width: 80%;
+    height: 225px;
+    background-color: #e4c4c3a7;
+    margin: 0 auto;
+    border-radius: 15px;
+    min-width: 400px;
+    max-width: 600px;
+    text-align: center;
+}
+/*características do input ao login*/
+input{
+    width: 80%;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 15px;
+    background-color: #dbe3d3;
+    padding-left: 5px;
+    border: none;
+    border-radius: 10px;
+}
+/*espaço para email*/
+input.email{
+    margin-top: 20px;
+    background-repeat: no-repeat;
+    background-position: 5px;
+}
+/*espaço para senha*/
+input.senha{
+    background-repeat: no-repeat;
+    background-position: 5px;
+}
+/*botão de login*/
+input.submit{
+    color: #e4c4c3;
+    background-color: #9c632a;
+    border-radius: 10px;
+    padding: 5px 20px;
+    height: 40px;
+    width: 81%;
+}
+input.submit:hover{
+    color: #e4c4c3;
+    background-color: #5e350b;
+    border-radius: 10px;
+    padding: 5px 20px;
+    height: 40px;
+    width: 81%;
+}
+/*cor do botão de cadastro(no parágrafo)*/
+.botaocadastro{
+    color: #9c632a;
+}
+/*container do formulário de cadastro*/
+#conteiner {
+    margin: 0 auto;
+    width: 50%;
+    background-color: #EFEAD6;
+    border-radius: 5px;
+    padding: 30px;
+}
+/*espaço no formulário de cadastro*/
+fieldset {
+    background-color: #e4c4c3;
+    border: 1px #e4c4c3 solid;
+    margin: 10px;
+}
+/*titulos no formulário*/
+legend {
+    font-weight: bold;
+    color: #9c632a;
+}
+/*botões*/
+label {
+    display: block;
+    cursor: pointer;
+}
+/*classe do container */
+.cont {
+    display: inline;
+    cursor: pointer;
+}
+/*tamanho das barras no cadastro */
+.tamanhocad{
+    width: 100%;
+}
+/*área de texto no cadastro*/
+textarea{ 
+    width: 100%;
+    height: 80px;
+    resize: none;
+    background-color: #dbe3d3;
+    border-radius: 10px;
+    border-color: #e4c4c3;
+}
+/*características do botão de enviar cadastro*/
+.bot {
+    margin: 10px 0 0 10px;
+}
+/*Container da página do produto*/
+#produtoo{
+    width: 100%;
+    height: 500px;
+    background-color: #e4c4c3;
+    margin: 0 auto;
+    border-radius: 15px;
+    min-width: 400px;
+    max-width: 1300px;
+    
+}
+/*características da foto do macaron*/
+#fotomacaron{
+    margin-top: 50px;
+    margin-left: 850px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    float: left;
+}
+/*texto sobre o macaron*/
+.omacaron{
+    color: #9c632a;
+    border: solid #e4c4c3 3px;
+    position: absolute;
+    margin-top: 45px ;
+    margin-left: 50px;
+    float: left;
+    text-align: left;
+
+}
+/*características e preço do macaron*/
+.caracmacar{
+    color: black;
+    border: solid #e4c4c3 3px;
+    position: absolute;
+    margin-top: 140px ;
+    margin-left: 50px;
+    float: left;
+    text-align: justify;
+    width: 460px;
+    font-size: 1.1em; 
+    line-height: 1.2em;
+}
+/*botão para adicionar o macaron a sacola*/
+.botaoproduto{
+    float: left;
+    position: absolute;
+    margin-top: 410px ;
+    margin-left: 50px;
+    width: 100px;
+}
+/*características do style do preço*/
+.precomacaron{
+    color: #9c632a;
+    border: solid #e4c4c3 3px;
+    position: absolute;
+    margin-top: 300px ;
+    margin-left: 50px;
+    float: left;
+    text-align: justify;
+    width: 460px;
+    font-size: 1.0em; 
+    line-height: 0.2em;
+}
+/*espaço entre o container do produto e o feedback (gambiarra rs)*/
+#nulo{
+    width: 100%;
+    height: 50px;
+    background-color: #dbe3d3;
+    margin: auto;
+    border-radius: 15px;
+    min-width: 400px;
+    max-width: 1300px;
+}
+/*container do feedback*/
+#feedbackk{
+    width: 100%;
+    height: 300px;
+    background-color: #e4c4c3;
+    margin: auto;
+    border-radius: 15px;
+    min-width: 400px;
+    max-width: 1300px;
+}
+/* características dos comentários do feedback*/
+.comentarios{
+    color: black;
+    border: solid #e4c4c3 3px;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 480px;
+    float: left;
+    text-align: justify;
+    width: 700px;
+    font-size: 1.1em; 
+    line-height: 1.2em;
+}
+/*estrelas do feedback*/
+label{
+    color: #9c632a;
+    font-size: large;
+}
+.estrelas{
+    color: black;
+    border: solid #e4c4c3 3px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 30px;
+    float: left;
+    text-align: justify;
+    width: 900px;
+}
+/*produtos dentro da sacola*/
+.tabelasacola{
+    padding: 20px;
+}
+/*botao de comprar*/
+.botaocomprar{
+    float: right;
+    padding: 30px;
+    text-decoration: none;
+    color: #9c632a;
+}
+/*espaço da sacola*/
+#containersacola{
+    width: 100%;
+    height: 550px;
+    background-color: #e4c4c3;
+    margin: 0 auto;
+    border-radius: 15px;
+    min-width: 400px;
+    max-width: 1300px;
+}
+/*Banners da parallax no index*/
+.banner1, .banner2, .banner3{
+    margin: 0;
+    padding: auto;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+}
+/*banner le croissant*/
+.banner1{
+    background-image: url(../Imagens/bannerindex.jpeg);
+}
+/*banner nossos macarons*/
+.banner2{
+    background-image: url(../Imagens/nossosmacarons.jpeg);
+}
+/*banner promocional*/
+.banner3{
+    background-image: url(../Imagens/banner\ promo.png);
+}
+.conteudoparallax{
+    background-color: #dbe3d3;
+    color: black;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px 40px 20px 40px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+.conteudo2{
+    background-color: #dbe3d3;
+    color: black;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px 40px 20px 40px;
+    line-height: 1.5em;
+    text-align: center;}
+/*titulo pagamento*/
+.titulo{
+    text-align: center;
+    background-color: #e4c4c3;
+    color: #9c632a;
+    padding: 1px;
+}
+/*container pagamento*/
+.pagamentocartao{
+    background-color: #e4c4c3;
+    margin-left: 30px;
+    width: 300px;
+    border-radius: 50px;
+    padding: 20px;
+    float: left;
+    position: absolute;
+}
+#pagamentos{
+    width: 100%;
+    height: 380px;
+    background-color: #dbe3d3;
+    margin: 0 auto;
+    border-radius: 15px;
+    min-width: 400px;
+    max-width: 1300px;
+}
+.pagamentopix{
+    background-color: #e4c4c3;
+    margin-left: 925px;
+    width: 300px;
+    border-radius: 50px;
+    padding: 20px;
+    float: left;
+    position: absolute;
+}
+.dinheiro{
+    background-color: #e4c4c3;
+    margin-left: 477px;
+    width: 300px;
+    border-radius: 50px;
+    padding: 20px;
+    float: left;
+    position: absolute;}
+.texto{
+    color: #9c632a;
+}
+.botaocomprar2{
+    padding: 30px;
+    position: absolute;
+}
+input.checkbox{
+    width: 15px;
+    height: 15px;
+}
+#termos{
+    color: #9c632a;
+}
+.baners{
+    margin-top: 30px;
+    margin-left: 255px;
+    margin-bottom: 50px;
+}
+.entreespaço{
+    background-color: #d8b2b0;
+    height: 15px;
+}
