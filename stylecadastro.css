@@ -1,0 +1,41 @@
+.contcadastro {
+    padding: 20px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #b76943;
+    width: 80%;
+    margin-bottom: 80px;
+}
+
+.taminput {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    background-color: #f0ebd8;
+    height: 35px;
+    text-indent: 10px;
+}
+
+.btn-enviar {
+    background-color: #392b1e;
+    color: #f0ebd8;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 10%;
+    box-shadow: 1px 1px;
+}
+
+body{
+    background-color: #f0ebd8;
+}
+
+h2{
+    color: #392b1e;
+    text-align: center;
+}
+
+footer{
+    background-color: #505b4b; 
+    color: #f0ebd8; 
+    padding: 40px 0;
+}
