@@ -7,20 +7,47 @@
     <title>Le Croissant</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styleronaldo.css">
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .titulo {
+            background-color: #929f90;
+            text-align: center;
+            padding: 10px;
+            color: #f0ebd8;
+        }
+
+        .nav-icons a {
+            margin-left: 15px;
+        }
+
+        .card-body h5,
+        .card-body p,
+        .btn {
+            color: #f0ebd8;
+        }
+
+        .card {
+            background-color: #b76943;
+        }
+
+        .btn {
+            background-color: #505b4b;
+        }
+        .fundo{
+            background-color: #ede3be;
+        }
+    </style>
 </head>
 
-<body>
+<body class="fundo">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg" style="background-color: #505b4b;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="Imagens/Sprint 3/logo/creme.png" alt="Le Croissant Logo" width="50" height="50">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -42,164 +69,480 @@
                     <a href="#"><i class="bi bi-bag fs-3" style="color: #f0ebd8;"></i></a>
                     <a href="#"><i class="bi bi-person fs-3" style="color: #f0ebd8;"></i></a>
                 </div>
-
             </div>
         </div>
     </nav>
 
+    <br>
+
+    <div class="titulo">
+        <h2>Bebidas</h2>
+    </div>
     <div>
         <div class="container my-5">
             <div class="row">
                 <!-- Linha 1 -->
                 <!-- Card 1 -->
-                <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
-                    <div class="card" style="background-color: #b76943;">
-                        <img src="img/agua.jpg" class="card-img-top" alt="macarrons">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/agua3.jpg" class="card-img-top" alt="Água">
                         <div class="card-body">
-                            <h5 class="card-title" style="color: #f0ebd8;">Água</h5>
-                            <p class="card-text" style="color: #f0ebd8;">R$18,00</p>
-                            <a href="#" class="btn btdoc" style="background-color: #505b4b; color: #f0ebd8;">Adicionar à sacola</a>
+                            <h5 class="card-title">Água</h5>
+                            <p class="card-text">R$18,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Card 2 -->
-                <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
-                    <div class="card" style="background-color: #b76943;">
-                        <img src="img/capuccino ice.jpg" class="card-img-top" alt="croissant">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/capucino.jpg" class="card-img-top" alt="Capuccino Ice">
                         <div class="card-body">
-                            <h5 class="card-title" style="color: #f0ebd8;">Capuccino ice</h5>
-                            <p class="card-text" style="color: #f0ebd8;">R$12,00</p>
-                            <a href="#" class="btn btdoc" style="background-color: #505b4b; color: #f0ebd8;">Adicionar à sacola</a>
+                            <h5 class="card-title">Capuccino Ice</h5>
+                            <p class="card-text">R$12,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Card 3 -->
-                <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
-                    <div class="card" style="background-color: #b76943;">
-                        <img src="img/capuccino.jpg" class="card-img-top" alt="cheesecake">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/capuccino.jpg" class="card-img-top" alt="Capuccino">
                         <div class="card-body">
-                            <h5 class="card-title" style="color: #f0ebd8;">Capuccino</h5>
-                            <p class="card-text" style="color: #f0ebd8;">R$20,00</p>
-                            <a href="#" class="btn btdoc" style="background-color: #505b4b; color: #f0ebd8;">Adicionar à sacola</a>
+                            <h5 class="card-title">Capuccino</h5>
+                            <p class="card-text">R$20,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Card 4 -->
-                <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
-                    <div class="card" style="background-color: #b76943;">
-                        <img src="img/cha.jpg" class="card-img-top" alt="cappuccino">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/cha.jpg" class="card-img-top" alt="Chá">
                         <div class="card-body">
-                            <h5 class="card-title" style="color: #f0ebd8;">Chá</h5>
-                            <p class="card-text" style="color: #f0ebd8;">R$10,00</p>
-                            <a href="#" class="btn btdoc" style="background-color: #505b4b; color: #f0ebd8;">Adicionar à sacola</a>
+                            <h5 class="card-title">Chá</h5>
+                            <p class="card-text">R$10,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Card 5 -->
-                <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
-                    <div class="card" style="background-color: #b76943;">
-                        <img src="img/Matcha.jpg" class="card-img-top" alt="tarte-au-citron">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/Matcha.jpg" class="card-img-top" alt="Matcha">
                         <div class="card-body">
-                            <h5 class="card-title" style="color: #f0ebd8;">Matcha</h5>
-                            <p class="card-text" style="color: #f0ebd8;">R$15,00</p>
-                            <a href="#" class="btn btdoc" style="background-color: #505b4b; color: #f0ebd8;">Adicionar à sacola</a>
+                            <h5 class="card-title">Matcha</h5>
+                            <p class="card-text">R$15,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Card 6 -->
-                <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
-                    <div class="card" style="background-color: #b76943;">
-                        <img src="img/milkshake.jpg" class="card-img-top" alt="espresso">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/milkshake.jpg" class="card-img-top" alt="Milkshake">
                         <div class="card-body">
-                            <h5 class="card-title" style="color: #f0ebd8;">Milkshake</h5>
-                            <p class="card-text" style="color: #f0ebd8;">R$8,00</p>
-                            <a href="#" class="btn btdoc" style="background-color: #505b4b; color: #f0ebd8;">Adicionar à sacola</a>
+                            <h5 class="card-title">Milkshake</h5>
+                            <p class="card-text">R$8,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
                         </div>
                     </div>
                 </div>
-            </div>
-    
-            <div class="row">
+
                 <!-- Linha 2 -->
                 <!-- Card 7 -->
-                <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
-                    <div class="card" style="background-color: #b76943;">
-                        <img src="img/suco de goiaba.jpg" class="card-img-top" alt="pain-au-chocolat">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/suco de goiaba.jpg" class="card-img-top" alt="Suco de Goiaba">
                         <div class="card-body">
-                            <h5 class="card-title" style="color: #f0ebd8;">Suco de goiaba</h5>
-                            <p class="card-text" style="color: #f0ebd8;">R$14,00</p>
-                            <a href="#" class="btn btdoc" style="background-color: #505b4b; color: #f0ebd8;">Adicionar à sacola</a>
+                            <h5 class="card-title">Suco de Goiaba</h5>
+                            <p class="card-text">R$14,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Card 8 -->
-                <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
-                    <div class="card" style="background-color: #b76943;">
-                        <img src="img/suco de laranja.jpg" class="card-img-top" alt="latte">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/suco de laranja.jpg" class="card-img-top" alt="Suco de Laranja">
                         <div class="card-body">
-                            <h5 class="card-title" style="color: #f0ebd8;">Suco de laranja</h5>
-                            <p class="card-text" style="color: #f0ebd8;">R$9,00</p>
-                            <a href="#" class="btn btdoc" style="background-color: #505b4b; color: #f0ebd8;">Adicionar à sacola</a>
+                            <h5 class="card-title">Suco de Laranja</h5>
+                            <p class="card-text">R$9,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Card 9 -->
-                <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
-                    <div class="card" style="background-color: #b76943;">
-                        <img src="img/suco de manga.jpg" class="card-img-top" alt="mocha">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/suco de manga.jpg" class="card-img-top" alt="Suco de Manga">
                         <div class="card-body">
-                            <h5 class="card-title" style="color: #f0ebd8;">Suco de manga</h5>
-                            <p class="card-text" style="color: #f0ebd8;">R$11,00</p>
-                            <a href="#" class="btn btdoc" style="background-color: #505b4b; color: #f0ebd8;">Adicionar à sacola</a>
+                            <h5 class="card-title">Suco de Manga</h5>
+                            <p class="card-text">R$11,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Card 10 -->
-                <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
-                    <div class="card" style="background-color: #b76943;">
-                        <img src="img/suco de morango.jpg" class="card-img-top" alt="americano">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/suco de morango.jpg" class="card-img-top" alt="Suco de Morango">
                         <div class="card-body">
-                            <h5 class="card-title" style="color: #f0ebd8;">Suco de morango</h5>
-                            <p class="card-text" style="color: #f0ebd8;">R$8,00</p>
-                            <a href="#" class="btn btdoc" style="background-color: #505b4b; color: #f0ebd8;">Adicionar à sacola</a>
+                            <h5 class="card-title">Suco de Morango</h5>
+                            <p class="card-text">R$13,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Card 11 -->
-                <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
-                    <div class="card" style="background-color: #b76943;">
-                        <img src="img/suco maracuja.jpg" class="card-img-top" alt="chai-latte">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/suco maracuja.jpg" class="card-img-top" alt="maracuja">
                         <div class="card-body">
-                            <h5 class="card-title" style="color: #f0ebd8;">Suco de maracujá</h5>
-                            <p class="card-text" style="color: #f0ebd8;">R$13,00</p>
-                            <a href="#" class="btn btdoc" style="background-color: #505b4b; color: #f0ebd8;">Adicionar à sacola</a>
+                            <h5 class="card-title">Suco de maracujá</h5>
+                            <p class="card-text">R$25,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Card 12 -->
-                <div class="col-lg-2 col-md-4 col-sm-6 col-12 mb-4">
-                    <div class="card" style="background-color: #b76943;">
-                        <img src="img/frappe.jpg" class="card-img-top" alt="frappe">
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/frappee.jpg" class="card-img-top" alt="frappee">
                         <div class="card-body">
-                            <h5 class="card-title" style="color: #f0ebd8;">Frappe</h5>
-                            <p class="card-text" style="color: #f0ebd8;">R$16,00</p>
-                            <a href="#" class="btn btdoc" style="background-color: #505b4b; color: #f0ebd8;">Adicionar à sacola</a>
+                            <h5 class="card-title">Frappe</h5>
+                            <p class="card-text">R$30,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+
+    <br>
+    <div class="titulo">
+        <h2>Doces</h2>
+    </div>
+    <div>
+        <div class="container my-5">
+            <div class="row">
+                <!-- Linha 1 -->
+                <!-- Card 1 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/bolo.jpg" class="card-img-top" alt="bolo">
+                        <div class="card-body">
+                            <h5 class="card-title">Bolo</h5>
+                            <p class="card-text">R$18,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/brownie.jpg" class="card-img-top" alt="brownie">
+                        <div class="card-body">
+                            <h5 class="card-title">Brownie</h5>
+                            <p class="card-text">R$12,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/cookie.jpg" class="card-img-top" alt="cookie">
+                        <div class="card-body">
+                            <h5 class="card-title">Cookie</h5>
+                            <p class="card-text">R$20,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/crepe.jpg" class="card-img-top" alt="crepe">
+                        <div class="card-body">
+                            <h5 class="card-title">Crepe</h5>
+                            <p class="card-text">R$10,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/croissantd.jpg" class="card-img-top" alt="Croissant">
+                        <div class="card-body">
+                            <h5 class="card-title">Croissant</h5>
+                            <p class="card-text">R$15,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/cupcake8.jpg" class="card-img-top" alt="cupcake8">
+                        <div class="card-body">
+                            <h5 class="card-title">Cupcake</h5>
+                            <p class="card-text">R$8,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linha 2 -->
+                <!-- Card 7 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/donuts.jpg" class="card-img-top" alt="donuts">
+                        <div class="card-body">
+                            <h5 class="card-title">Donuts</h5>
+                            <p class="card-text">R$14,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/macaron.jpg" class="card-img-top" alt="macaron">
+                        <div class="card-body">
+                            <h5 class="card-title">Macarons</h5>
+                            <p class="card-text">R$9,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/madeleine.jpg" class="card-img-top" alt="madeleine">
+                        <div class="card-body">
+                            <h5 class="card-title">Madeleine</h5>
+                            <p class="card-text">R$11,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/sonho.jpg" class="card-img-top" alt="sonho">
+                        <div class="card-body">
+                            <h5 class="card-title">Sonho</h5>
+                            <p class="card-text">R$13,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 11 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/torta.jpg" class="card-img-top" alt="torta">
+                        <div class="card-body">
+                            <h5 class="card-title">Torta de limão</h5>
+                            <p class="card-text">R$25,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 12 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/panquecas.jpg" class="card-img-top" alt="panqueca">
+                        <div class="card-body">
+                            <h5 class="card-title">Panqueca</h5>
+                            <p class="card-text">R$30,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <div class="titulo">
+        <h2>Salgaos</h2>
+    </div>
+    <div>
+        <div class="container my-5">
+            <div class="row">
+                <!-- Linha 1 -->
+                <!-- Card 1 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/crepioca.jpg" class="card-img-top" alt="crepioca">
+                        <div class="card-body">
+                            <h5 class="card-title">Crepioca</h5>
+                            <p class="card-text">R$18,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/croissant salgado.jpg" class="card-img-top" alt="croissant salgado">
+                        <div class="card-body">
+                            <h5 class="card-title">Croissant salgado</h5>
+                            <p class="card-text">R$12,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/gougeree.jpg" class="card-img-top" alt="gougere">
+                        <div class="card-body">
+                            <h5 class="card-title">Gougere</h5>
+                            <p class="card-text">R$20,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/omelete espinafre.jpg" class="card-img-top" alt="omelete">
+                        <div class="card-body">
+                            <h5 class="card-title">Omeletes</h5>
+                            <p class="card-text">R$10,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/pao casquinha.jpg" class="card-img-top" alt="pao">
+                        <div class="card-body">
+                            <h5 class="card-title">Pão casquinha</h5>
+                            <p class="card-text">R$15,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/pao de queijo.jpg" class="card-img-top" alt="paoqueijo">
+                        <div class="card-body">
+                            <h5 class="card-title">Pão de queijo</h5>
+                            <p class="card-text">R$8,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Linha 2 -->
+                <!-- Card 7 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/quiche lorraine.jpg" class="card-img-top" alt="quiche">
+                        <div class="card-body">
+                            <h5 class="card-title">Quiche lorraine</h5>
+                            <p class="card-text">R$14,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/sanduiche natural.jpg" class="card-img-top" alt="sanduiches">
+                        <div class="card-body">
+                            <h5 class="card-title">Sanduíches</h5>
+                            <p class="card-text">R$9,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/souffle de queijo.jpg" class="card-img-top" alt="souffle">
+                        <div class="card-body">
+                            <h5 class="card-title">Souffle de queijo</h5>
+                            <p class="card-text">R$11,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/torta de frango.jpg" class="card-img-top" alt="frango">
+                        <div class="card-body">
+                            <h5 class="card-title">Torta de frango</h5>
+                            <p class="card-text">R$13,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 11 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/tostex.jpg" class="card-img-top" alt="tostex">
+                        <div class="card-body">
+                            <h5 class="card-title">Tostex</h5>
+                            <p class="card-text">R$25,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 12 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/panquecaa.jpg" class="card-img-top" alt="panquecaa">
+                        <div class="card-body">
+                            <h5 class="card-title">Panqueca</h5>
+                            <p class="card-text">R$30,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
