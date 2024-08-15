@@ -1,0 +1,62 @@
+body{
+    background-color: #f0ebd8;
+}
+
+h2{
+    color: #392b1e;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+
+footer{
+    background-color: #505b4b; 
+    color: #f0ebd8; 
+    padding: 40px 0;
+    text-align: center;
+}
+
+p{
+    margin: 20px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+p.comImg{
+    margin: 20px;
+    padding: 10px;
+    text-indent: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.inaug{
+    width: 100%;
+    margin: 10px;
+}
+
+p.event{
+    float: left;
+    margin: 20px;
+    padding: 10px;
+    text-indent: 20px;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+p.event2{
+    float: left;
+    margin: 20px;
+    padding: 10px;
+    text-indent: 20px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.evento{
+    color: #392b1e;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 30px;
+}
