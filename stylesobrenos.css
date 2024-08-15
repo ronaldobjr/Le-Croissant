@@ -60,3 +60,53 @@ p.event2{
     margin-top: 30px;
     margin-left: 30px;
 }
+
+.float{
+    float: left;
+    margin: 20px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.float2{
+    float: right;
+    margin: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.clear{
+    clear: both;
+}
+
+img.side{
+    margin: 15px;
+    width: 600px;
+    float:left;
+    margin-left:60px;
+}
+
+img.side2{
+    margin: 15px;
+    width: 600px;
+    float:left;
+    margin-right: 20px;
+}
+
+.cent{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align: center;
+}
+
+.float-evento{
+    float: left;
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+
+.float-mapa{
+    float: right;
+    margin-top: 20px;
+}
