@@ -28,3 +28,10 @@ footer {
 .cardss{
     background-color: #f0ebd8;
 }
+
+btn.enviar{
+    background-color: #505b4b; 
+    color: #f0ebd8;
+    width: 15%;
+    text-align: center;
+}
