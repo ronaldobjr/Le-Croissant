@@ -1,68 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
-  <title>Exemplo de janela modal com Bootstrap 5</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notícias - Le Croissant</title>
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilos Personalizados -->
+  <style>
+    .news-card {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      border: none;
+      border-radius: 0.25rem;
+      box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+    }
 
-  <!-- jQuery e Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+    .news-card-img {
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 0.25rem 0 0 0.25rem;
+    }
+
+    .news-card-body {
+      flex: 1;
+      padding: 1rem;
+    }
+
+    .news-card-title {
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+    }
+
+    .news-card-text {
+      font-size: 1rem;
+    }
+
+    .news-card-footer {
+      margin-top: 0.5rem;
+    }
+  </style>
 </head>
+
 <body>
-
-  <div class="container">
-    <h1>Exemplo de janela modal com Bootstrap 5</h1>
-    <p>Clique no botão abaixo para abrir a janela modal:</p>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-var="valor-da-variavel">Abrir janela modal</button>
-  </div>
-
-  <!-- Janela Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Minha janela modal</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+  <main class="container my-5">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <!-- Card de Notícia 1 -->
+        <div class="news-card">
+          <img src="img/cha.jpg" class="news-card-img" alt="cha">
+          <div class="news-card-body">
+            <h5 class="news-card-title">Chá</h5>
+            <p class="card-text">R$ <span class="price">6,00</span></p>
+            <div class="mb-2">
+              <label for="quantity-cafe" class="form-label">Quantidade:</label>
+              <input type="number" id="quantity-cafe" class="form-control" value="2" min="1">
+          </div>
+          </div>
         </div>
-        <div class="modal-body">
-          <form id="meu-form" method="post" action="pagina-de-destino.php">
-            <input type="hidden" name="minha-var" id="minha-var" value="">
-            <div class="mb-3">
-              <label for="nome" class="form-label">Nome:</label>
-              <input type="text" class="form-control" id="nome" name="nome">
+        <!-- Card de Notícia 2 -->
+        <div class="news-card">
+          <img src="img/noticia2.jpg" class="news-card-img" alt="Notícia 2">
+          <div class="news-card-body">
+            <h5 class="news-card-title">Notícia 2</h5>
+            <p class="news-card-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam.</p>
+            <div class="news-card-footer">
+              <a href="#" class="btn btn-primary">Leia Mais</a>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">E-mail:</label>
-              <input type="email" class="form-control" id="email" name="email">
-            </div>
-          </form>
+          </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-          <button type="button" class="btn btn-primary" onclick="submitForm()">Enviar</button>
+        <!-- Card de Notícia 3 -->
+        <div class="news-card">
+          <img src="img/noticia3.jpg" class="news-card-img" alt="Notícia 3">
+          <div class="news-card-body">
+            <h5 class="news-card-title">Notícia 3</h5>
+            <p class="news-card-text">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit.</p>
+            <div class="news-card-footer">
+              <a href="#" class="btn btn-primary">Leia Mais</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- Script para enviar o formulário -->
-  <script>
-    function submitForm() {
-      var minhaVar = $('#exampleModal').data('var');
-      $('#minha-var').val(minhaVar);
-      $('#meu-form').submit();
-    }
-
-    var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
-
-    myModal.addEventListener('hide.bs.modal', function (event) {
-      var form = document.getElementById('meu-form');
-      form.submit();
-    })
-  </script>
-
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
