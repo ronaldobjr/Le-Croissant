@@ -1,0 +1,38 @@
+body {
+    background-color: #f0ebd8;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #505b4b;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    background-color: #b76943;
+    color: #f0ebd8;
+    border: none;
+}
+
+input[readonly] {
+    background-color: #505b4b;
+    color: #f0ebd8;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+strong {
+    color: #505b4b;
+}
+
+.cart-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #929f90;
+}
