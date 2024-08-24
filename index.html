@@ -5,11 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Le Croissant</title>
-    <!-- Bootstrap CSS -->
+    <!-- CSS e bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styleronaldo.css">
-    <!-- Bootstrap Icons -->
+    <!-- Ícones do bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <style>
+        /* hover para os links da navbar */
+        .navbar-nav .nav-link:hover {
+            color: #b76943 !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -45,14 +52,11 @@
                     <div class="m-2">
                         <a href="sejaumcliente.html"><i class="bi bi-person fs-3" style="color: #f0ebd8;"></i></a>
                     </div>
-                    
                 </div>
-
             </div>
         </div>
     </nav>
-
-    <!-- Carrossel -->
+    <!-- Carrossel de banners -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -78,6 +82,7 @@
                 <img src="imagens/Sprint 3/banner_rebranding.png" class="d-block w-100" alt="Imagem 4">
             </div>
         </div>
+        <!-- Botões do carrossel -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -89,7 +94,7 @@
             <span class="visually-hidden">Próximo</span>
         </button>
     </div>
-
+    <!-- Legenda dos banners -->
     <div style="background-color: #505b4b;" class="p-5">
         <h2 style="color: #f0ebd8;">A LE CROISSANT</h2>
         <p style="color: #f0ebd8;">A cafeteria “Le Croissant” é inspirada na gastronomia francesa. Oferece café da
@@ -98,10 +103,12 @@
             estilo e gastronomia francesas unido ao toque caseiro e retrô de nosso ambiente.</p>
     </div>
 
-    <div style="background-color: #ede3be;">
+    <!-- Produtos em destaque -->
+    <div style="background-color: #f0ebd8;">
         <div class="container p-5">
-            <h2 class="color:#392b1e text-center">PRODUTOS EM DESTAQUE:</h2>
+            <h2 class="text-center" style="color:#392b1e;">PRODUTOS EM DESTAQUE:</h2>
             <br>
+            <!-- cards -->
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
                     <div class="card" style="background-color: #b76943;">
@@ -113,7 +120,7 @@
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
                     <div class="card" style="background-color: #b76943;">
                         <img src="Imagens/Sprint 3/Doce L'Amouir.png" class="card-img-top" alt="Doce L'amour">
@@ -124,7 +131,7 @@
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
                     <div class="card" style="background-color: #b76943;">
                         <img src="Imagens/Sprint 3/Medeleine.png" class="card-img-top" alt="medeleine">
@@ -135,7 +142,7 @@
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="col-lg-3 col-md-4 col-sm-6 col-12 mb-4">
                     <div class="card" style="background-color: #b76943;">
                         <img src="Imagens/Sprint 3/Quiche Loraine.png" class="card-img-top" alt="quiche loraine">
@@ -146,13 +153,12 @@
                         </div>
                     </div>
                 </div>
-                <br>
-                <a href="cardapio.html" style="text-decoration: none;"> <button class="btn" style= "text-decoration: none; background-color: #392b1e; color: #f0ebd8; width: 20%; border-radius: 10px; display: block; margin: auto;" type="button" >Acesse o menu para mais</button></a>
             </div>
-        </div>    
+            <a href="cardapio.html" style="text-decoration: none;">
+                <button class="btn" style="text-decoration: none; background-color: #392b1e; color: #f0ebd8; width: 20%; border-radius: 10px; display: block; margin: auto;" type="button">Acesse o menu para mais</button>
+            </a>
+        </div>
     </div>
-
-
 
     <!-- Rodapé do site -->
     <footer class="text-center" style="background-color: #505b4b; color: #f0ebd8; padding: 20px 0;">
@@ -169,8 +175,6 @@
 
         <p><small>&reg; Le Croissant - Brasil 2024</small></p>
     </footer>
-    
-    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Estilo interno para o cardápio -->
     <style>
         .titulo {
             background-color: #505b4b;
@@ -34,8 +35,13 @@
         .btn {
             background-color: #505b4b;
         }
-        .fundo{
+
+        .fundo {
             background-color: #ede3be;
+        }
+        /* hover para os links da navbar */
+        .navbar-nav .nav-link:hover {
+            color: #b76943 !important;
         }
     </style>
 </head>
@@ -47,7 +53,8 @@
             <a class="navbar-brand" href="index.html">
                 <img src="Imagens/Sprint 3/logo/creme.png" alt="Le Croissant Logo" width="50" height="50">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -66,34 +73,40 @@
                     </li>
                 </ul>
                 <div class="nav-icons d-flex">
-                    <a href="#"><i class="bi bi-bag fs-3" style="color: #f0ebd8;"></i></a>
-                    <a href="#"><i class="bi bi-person fs-3" style="color: #f0ebd8;"></i></a>
+                    <div class="m-2">
+                        <a href="sacola.html"><i class="bi bi-bag fs-3" style="color: #f0ebd8;"></i></a>
+                    </div>
+                    <div class="m-2">
+                        <a href="sejaumcliente.html"><i class="bi bi-person fs-3" style="color: #f0ebd8;"></i></a>
+                    </div>
+
                 </div>
 
             </div>
         </div>
     </nav>
-    <br>
+
+    <img src="Imagens/Sprint 3/bannerexemplo.jpeg" alt="Banner de exemplo">
+
+    <!-- Lista de bebidas -->
     <div class="titulo">
-        <h2>Bebidas</h2>
+        <h2>BEBIDAS</h2>
     </div>
     <div>
         <div class="container my-5">
             <div class="row">
                 <!-- Linha 1 -->
-                <!-- Card 1 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/agua3.jpg" class="card-img-top" alt="Água">
                         <div class="card-body">
                             <h5 class="card-title">Água</h5>
-                            <p class="card-text">R$18,00</p>
+                            <p class="card-text">R$6,00</p>
                             <a href="#" class="btn btdoc">Adicionar à sacola</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 2 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/capucino.jpg" class="card-img-top" alt="Capuccino Ice">
@@ -105,19 +118,17 @@
                     </div>
                 </div>
 
-                <!-- Card 3 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/capuccino.jpg" class="card-img-top" alt="Capuccino">
                         <div class="card-body">
                             <h5 class="card-title">Capuccino</h5>
-                            <p class="card-text">R$20,00</p>
+                            <p class="card-text">R$12,50</p>
                             <a href="#" class="btn btdoc">Adicionar à sacola</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 4 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/cha.jpg" class="card-img-top" alt="Chá">
@@ -129,44 +140,39 @@
                     </div>
                 </div>
 
-                <!-- Card 5 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/Matcha.jpg" class="card-img-top" alt="Matcha">
                         <div class="card-body">
                             <h5 class="card-title">Matcha</h5>
-                            <p class="card-text">R$15,00</p>
-                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="card">
-                        <img src="img/milkshake.jpg" class="card-img-top" alt="Milkshake">
-                        <div class="card-body">
-                            <h5 class="card-title">Milkshake</h5>
-                            <p class="card-text">R$8,00</p>
-                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Linha 2 -->
-                <!-- Card 7 -->
-                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
-                    <div class="card">
-                        <img src="img/suco de goiaba.jpg" class="card-img-top" alt="Suco de Goiaba">
-                        <div class="card-body">
-                            <h5 class="card-title">Suco de Goiaba</h5>
                             <p class="card-text">R$14,00</p>
                             <a href="#" class="btn btdoc">Adicionar à sacola</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 8 -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/milkshake.jpg" class="card-img-top" alt="Milkshake">
+                        <div class="card-body">
+                            <h5 class="card-title">Milkshake</h5>
+                            <p class="card-text">R$14,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                    <div class="card">
+                        <img src="img/suco de goiaba.jpg" class="card-img-top" alt="Suco de Goiaba">
+                        <div class="card-body">
+                            <h5 class="card-title">Suco de Goiaba</h5>
+                            <p class="card-text">R$8,00</p>
+                            <a href="#" class="btn btdoc">Adicionar à sacola</a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/suco de laranja.jpg" class="card-img-top" alt="Suco de Laranja">
@@ -178,7 +184,6 @@
                     </div>
                 </div>
 
-                <!-- Card 9 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/suco de manga.jpg" class="card-img-top" alt="Suco de Manga">
@@ -190,7 +195,6 @@
                     </div>
                 </div>
 
-                <!-- Card 10 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/suco de morango.jpg" class="card-img-top" alt="Suco de Morango">
@@ -202,7 +206,6 @@
                     </div>
                 </div>
 
-                <!-- Card 11 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/suco maracuja.jpg" class="card-img-top" alt="maracuja">
@@ -214,7 +217,6 @@
                     </div>
                 </div>
 
-                <!-- Card 12 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/frappee.jpg" class="card-img-top" alt="frappee">
@@ -230,14 +232,15 @@
     </div>
 
     <br>
+
+    <!-- Lista de doces -->
     <div class="titulo">
-        <h2>Doces</h2>
+        <h2>DOCES</h2>
     </div>
     <div>
         <div class="container my-5">
             <div class="row">
-                <!-- Linha 1 -->
-                <!-- Card 1 -->
+                <!-- Linha 2 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/bolo.jpg" class="card-img-top" alt="bolo">
@@ -249,7 +252,6 @@
                     </div>
                 </div>
 
-                <!-- Card 2 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/brownie.jpg" class="card-img-top" alt="brownie">
@@ -261,7 +263,6 @@
                     </div>
                 </div>
 
-                <!-- Card 3 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/cookie.jpg" class="card-img-top" alt="cookie">
@@ -273,7 +274,6 @@
                     </div>
                 </div>
 
-                <!-- Card 4 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/crepe.jpg" class="card-img-top" alt="crepe">
@@ -285,7 +285,6 @@
                     </div>
                 </div>
 
-                <!-- Card 5 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/croissantd.jpg" class="card-img-top" alt="Croissant">
@@ -297,7 +296,6 @@
                     </div>
                 </div>
 
-                <!-- Card 6 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/cupcake8.jpg" class="card-img-top" alt="cupcake8">
@@ -309,8 +307,6 @@
                     </div>
                 </div>
 
-                <!-- Linha 2 -->
-                <!-- Card 7 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/donuts.jpg" class="card-img-top" alt="donuts">
@@ -322,7 +318,6 @@
                     </div>
                 </div>
 
-                <!-- Card 8 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/macaron.jpg" class="card-img-top" alt="macaron">
@@ -334,7 +329,6 @@
                     </div>
                 </div>
 
-                <!-- Card 9 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/madeleine.jpg" class="card-img-top" alt="madeleine">
@@ -346,7 +340,6 @@
                     </div>
                 </div>
 
-                <!-- Card 10 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/sonho.jpg" class="card-img-top" alt="sonho">
@@ -358,7 +351,6 @@
                     </div>
                 </div>
 
-                <!-- Card 11 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/torta.jpg" class="card-img-top" alt="torta">
@@ -370,7 +362,6 @@
                     </div>
                 </div>
 
-                <!-- Card 12 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/panquecas.jpg" class="card-img-top" alt="panqueca">
@@ -386,14 +377,15 @@
     </div>
 
     <br>
+
+    <!-- Lista de salgados -->
     <div class="titulo">
-        <h2>Salgados</h2>
+        <h2>SALGADOS</h2>
     </div>
     <div>
         <div class="container my-5">
             <div class="row">
-                <!-- Linha 1 -->
-                <!-- Card 1 -->
+                <!-- Lista de salgados -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/crepioca.jpg" class="card-img-top" alt="crepioca">
@@ -405,7 +397,6 @@
                     </div>
                 </div>
 
-                <!-- Card 2 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/croissant salgado.jpg" class="card-img-top" alt="croissant salgado">
@@ -417,7 +408,6 @@
                     </div>
                 </div>
 
-                <!-- Card 3 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/gougeree.jpg" class="card-img-top" alt="gougere">
@@ -429,7 +419,6 @@
                     </div>
                 </div>
 
-                <!-- Card 4 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/omelete espinafre.jpg" class="card-img-top" alt="omelete">
@@ -441,7 +430,6 @@
                     </div>
                 </div>
 
-                <!-- Card 5 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/pao casquinha.jpg" class="card-img-top" alt="pao">
@@ -453,7 +441,6 @@
                     </div>
                 </div>
 
-                <!-- Card 6 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/pao de queijo.jpg" class="card-img-top" alt="paoqueijo">
@@ -465,8 +452,6 @@
                     </div>
                 </div>
 
-                <!-- Linha 2 -->
-                <!-- Card 7 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/quiche lorraine.jpg" class="card-img-top" alt="quiche">
@@ -478,7 +463,6 @@
                     </div>
                 </div>
 
-                <!-- Card 8 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/sanduiche natural.jpg" class="card-img-top" alt="sanduiches">
@@ -490,7 +474,6 @@
                     </div>
                 </div>
 
-                <!-- Card 9 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/souffle de queijo.jpg" class="card-img-top" alt="souffle">
@@ -502,7 +485,6 @@
                     </div>
                 </div>
 
-                <!-- Card 10 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/torta de frango.jpg" class="card-img-top" alt="frango">
@@ -514,7 +496,6 @@
                     </div>
                 </div>
 
-                <!-- Card 11 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/tostex.jpg" class="card-img-top" alt="tostex">
@@ -526,7 +507,6 @@
                     </div>
                 </div>
 
-                <!-- Card 12 -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
                     <div class="card">
                         <img src="img/panquecaa.jpg" class="card-img-top" alt="panquecaa">
@@ -541,23 +521,25 @@
         </div>
     </div>
 
-     <!-- Rodapé do site -->
-     <footer class="text-center" style="background-color: #505b4b; color: #f0ebd8; padding: 20px 0;">
+    <!-- Rodapé do site -->
+    <footer class="text-center" style="background-color: #505b4b; color: #f0ebd8; padding: 20px 0;">
         <hr>
         <!-- Redes Sociais -->
         <div class="mb-2">
             <a href="https://wa.me/5514998899701?text=sua%20mensagem" target="_blank" style="color: #f0ebd8;">
                 <i class="bi bi-whatsapp fs-3 me-3"></i>
             </a>
-            <a href="https://www.instagram.com/lecroissantcafeteria?igsh=MTRqc3BndHl5cGI5bQ==" target="_blank" style="color: #f0ebd8;">
+            <a href="https://www.instagram.com/lecroissantcafeteria?igsh=MTRqc3BndHl5cGI5bQ==" target="_blank"
+                style="color: #f0ebd8;">
                 <i class="bi bi-instagram fs-3"></i>
             </a>
         </div>
 
+        <!-- Marca Le Croissant -->
         <p><small>&reg; Le Croissant - Brasil 2024</small></p>
     </footer>
 
-    <!-- Bootstrap JS -->
+    <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

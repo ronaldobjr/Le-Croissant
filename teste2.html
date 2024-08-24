@@ -21,8 +21,7 @@
             overflow: hidden;
         }
 
-        .card-img {
-            width: 150px;
+        .card-img-top {
             object-fit: cover;
         }
 
@@ -84,6 +83,13 @@
             background-color: #ede3be;
         }
 
+        .cart-container {
+            background-color: #929f90;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
         .total-section {
             margin-top: 2rem;
         }
@@ -118,14 +124,14 @@
                 </ul>
                 <div class="nav-icons d-flex">
                     <div class="m-2">
-                        <a href="sacola.html"><i class="bi bi-bag fs-3" style="color: #f0ebd8;"></i></a>
+                        <a href="sacola.html"><i class="bi bi-bag fs-3" style="color: #f0ebd8;"
+                                aria-label="Sacola de Compras"></i></a>
                     </div>
                     <div class="m-2">
-                        <a href="sejaumcliente.html"><i class="bi bi-person fs-3" style="color: #f0ebd8;"></i></a>
+                        <a href="sejaumcliente.html"><i class="bi bi-person fs-3" style="color: #f0ebd8;"
+                                aria-label="Perfil do Cliente"></i></a>
                     </div>
-                    
                 </div>
-
             </div>
         </div>
     </nav>
@@ -133,59 +139,66 @@
     <main class="container my-5">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <!-- Card de Notícia 1 -->
-                <div class="card mb-3" style="max-width: 900px;" data-price="6.00">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <img src="img/cha.jpg" width="200px" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">Chá</h5>
-                        <p class="card-text">R$ <span class="price">6,00</span></p>
-                        <div class="mb-2">
-                              <label for="quantity-cafe" class="form-label">Quantidade:</label>
-                              <input type="number" id="quantity-cafe" class="form-control" value="1" min="1">
+                <!-- Contêiner para Itens do Carrinho -->
+                <div class="cart-container">
+                    <!-- Card de Notícia 1 -->
+                    <div class="card mb-3" style="max-width: 900px;" data-price="6.00">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="img/cha.jpg" class="img-fluid rounded-start card-img-top" alt="Chá">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chá</h5>
+                                    <p class="card-text">R$ <span class="price">6,00</span></p>
+                                    <div class="mb-2">
+                                        <label for="quantity-cha" class="form-label">Quantidade:</label>
+                                        <input type="number" class="form-control quantity-input" value="1" min="1"
+                                            aria-label="Quantidade de Chá">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                </div>
-                <!-- Card de Produto -->
-                <div class="card mb-3" style="max-width: 900px;" data-price="6.00">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <img src="img/cookie.jpg" width="200px" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">Cookie</h5>
-                        <p class="card-text">R$ <span class="price">4,50</span></p>
-                        <div class="mb-2">
-                              <label for="quantity-cafe" class="form-label">Quantidade:</label>
-                              <input type="number" id="quantity-cafe" class="form-control" value="1" min="1">
+                    <!-- Card de Produto -->
+                    <div class="card mb-3" style="max-width: 900px;" data-price="4.50">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="img/cookie.jpg" class="img-fluid rounded-start card-img-top" alt="Cookie">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cookie</h5>
+                                    <p class="card-text">R$ <span class="price">4,50</span></p>
+                                    <div class="mb-2">
+                                        <label for="quantity-cookie" class="form-label">Quantidade:</label>
+                                        <input type="number" class="form-control quantity-input" value="1" min="1"
+                                            aria-label="Quantidade de Cookie">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                </div>
-                <!-- Card de Produto -->
-                <div class="card mb-3" style="max-width: 900px;" data-price="6.00">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <img src="img/madeleine.jpg" width="200px" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <h5 class="card-title">Madeleine</h5>
-                        <p class="card-text">R$ <span class="price">5,00</span></p>
-                        <div class="mb-2">
-                              <label for="quantity-cafe" class="form-label">Quantidade:</label>
-                              <input type="number" id="quantity-cafe" class="form-control" value="1" min="1">
+                    <!-- Card de Produto -->
+                    <div class="card mb-3" style="max-width: 900px;" data-price="5.00">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="img/madeleine.jpg" class="img-fluid rounded-start card-img-top"
+                                    alt="Madeleine">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Madeleine</h5>
+                                    <p class="card-text">R$ <span class="price">5,00</span></p>
+                                    <div class="mb-2">
+                                        <label for="quantity-madeleine" class="form-label">Quantidade:</label>
+                                        <input type="number" class="form-control quantity-input" value="1" min="1"
+                                            aria-label="Quantidade de Madeleine">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
                 </div>
                 <!-- Seção Total -->
                 <div class="total-section d-flex justify-content-between align-items-center">
@@ -208,7 +221,7 @@
                 document.getElementById('total-price').textContent = total.toFixed(2).replace('.', ',');
             };
 
-            document.querySelectorAll('input[type="number"]').forEach(input => {
+            document.querySelectorAll('.quantity-input').forEach(input => {
                 input.addEventListener('input', updateTotalPrice);
             });
 
