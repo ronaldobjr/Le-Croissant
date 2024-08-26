@@ -1,0 +1,97 @@
+body{
+    background-color: #f0ebd8 ;
+}
+
+.cont{
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #b76943  ;
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+
+
+button{
+    border-radius: 20px;
+    border: none;
+    background-color: #392b1e;
+    color: white;
+    height: 40px;
+    display: block;
+    margin: auto;
+}
+
+button:hover{
+    background-color: #5f4329;
+}
+
+.modal-footer{
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.cadast{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+
+h3{
+    display: block;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.input{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input input{
+    display: block;
+    margin: auto;
+    border-radius: 7px;
+    border: none;
+    margin-bottom: 10px;
+    text-indent: 25px;
+    width: 100%;
+    position: absolute;
+    height: 30px;
+    align-items: center;
+}
+
+.input i{
+    position: absolute;
+    left: 5px;
+    color: #392b1e;
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 25%;
+}
+
+#btn2{
+    border-radius: 5px;
+    border: none;
+    background-color: #686868;
+    color: white;
+    height: 25px;
+    display: block;
+    margin-left: 10px;
+}

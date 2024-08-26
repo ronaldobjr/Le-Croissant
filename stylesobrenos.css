@@ -24,7 +24,7 @@ p{
 }
 
 p.comImg{
-    margin: 20px;
+    margin: 40px;
     padding: 10px;
     text-indent: 20px;
     text-align: justify;
@@ -68,6 +68,10 @@ p.event2{
     margin-bottom: 10px;
 }
 
+.floatok{
+    float: left;
+}
+
 .float2{
     float: right;
     margin: 20px;
@@ -97,7 +101,6 @@ img.side2{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    align: center;
 }
 
 .float-evento{
