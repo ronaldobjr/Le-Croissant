@@ -12,14 +12,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Ícone da página -->
     <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/ico">
-
+    
     <script>
+        //imprime o nome do cliente cadastrado
         function imprimir() {
             var nomeCliente = document.getElementById('nome').value
             document.getElementById('exampleModalLabel').value = 'Olá, ' + nomeCliente + '!';
 
         }
-        var rafael = 10;
     </script>
 
 
@@ -121,6 +121,7 @@
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel">
         <div class="modal-dialog">
             <div class="modal-content">
+                <!--modal header -> a função é impressa aqui-->
                 <div class="modal-header">
                     <h1 class="modal-title fs-5"><input id="exampleModalLabel" style="border: 0;">
                         <script></script>
@@ -174,6 +175,7 @@
             <div class="vw-plugin-top-wrapper"></div>
         </div>
     </div>
+    <!--acessibilidade em libras-->
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
