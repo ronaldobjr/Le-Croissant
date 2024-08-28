@@ -204,30 +204,59 @@
                 <div class="total-section d-flex justify-content-between align-items-center">
                     <h3>Total: R$ <span id="total-price">25,50</span></h3>
                     <button class="btn btn-success">Finalizar Compra</button>
+                    <!-- Campo para inserir o código do cupom -->
+<div class="coupon-section mb-3">
+    <label for="coupon-code" class="form-label">Código do Cupom:</label>
+    <input type="text" id="coupon-code" class="form-control" placeholder="Insira seu cupom">
+    <button id="apply-coupon" class="btn btn-primary mt-2">Aplicar Cupom</button>
+</div>
+
                 </div>
             </div>
         </div>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const updateTotalPrice = () => {
-                let total = 0;
-                document.querySelectorAll('.card').forEach(card => {
-                    const price = parseFloat(card.getAttribute('data-price'));
-                    const quantity = parseInt(card.querySelector('input[type="number"]').value);
-                    total += price * quantity;
-                });
-                document.getElementById('total-price').textContent = total.toFixed(2).replace('.', ',');
-            };
+        function calculateTotalPrice() {
+    let total = 0;
+    const cards = document.querySelectorAll('.card');
 
-            document.querySelectorAll('.quantity-input').forEach(input => {
-                input.addEventListener('input', updateTotalPrice);
-            });
+    for (let i = 0; i < cards.length; i++) {
+        var card = cards[i];
+        var price = parseFloat(card.getAttribute('data-price'));
+        var quantity = parseInt(card.querySelector('input[type="number"]').value);
 
-            updateTotalPrice(); // Initial calculation
-        });
-    </script>
+        // Verifica se o preço e a quantidade são válidos antes de adicionar ao total
+        if (!isNaN(price) && !isNaN(quantity) && quantity > 0) {
+            total = total + (price * quantity);
+        }
+    }
+
+    // Aplicar desconto se o cupom for válido
+    const couponCode = document.getElementById('coupon-code').value.trim();
+    if (couponCode === 'DESCONTO10') { // Verifica se o cupom é "DESCONTO10"
+        total = total * 0.9; // Aplica 10% de desconto
+    }
+
+    // Verifica se o total é válido antes de atualizar o elemento HTML
+    if (!isNaN(total) && total >= 0) {
+        document.getElementById('total-price').textContent = total.toFixed(2).replace('.', ',');
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const inputs = document.querySelectorAll('.quantity-input');
+    const applyCouponButton = document.getElementById('apply-coupon');
+
+    for (let i = 0; i < inputs.length; i++) {
+        const input = inputs[i];
+        input.addEventListener('input', calculateTotalPrice);
+    }
+
+    applyCouponButton.addEventListener('click', calculateTotalPrice);
+
+    calculateTotalPrice(); // Cálculo inicial
+});
+    </script>
 </body>
 
 </html>
