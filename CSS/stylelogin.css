@@ -70,8 +70,9 @@ h3{
     text-indent: 25px;
     width: 100%;
     position: absolute;
-    height: 30px;
+    height: 35px;
     align-items: center;
+    background-color: #f0ebd8
 }
 
 .input i{
