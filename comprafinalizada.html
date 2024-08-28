@@ -8,6 +8,8 @@
     <title>Compra Finalizada</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Ícone da página -->
+    <link rel="shortcut icon" href="Imagens/Sprint_3/íconeLEC.ico" type="image/x-icon">
     <style>
         /* Estilo básico para o corpo da página */
         body {
@@ -16,7 +18,7 @@
         }
 
         /* Estilo do container principal */
-        .completed-container {
+        .concluido-container {
             background-color: #505b4b;
             color: #f0ebd8;
             padding: 30px;
@@ -24,25 +26,39 @@
         }
 
         /* Estilo do botão de voltar */
-        .btn-primary {
+        .btn-home {
             background-color: #e57a44;
             border-color: #e57a44;
             color: #505b4b;
         }
 
         /* Estilo do botão ao passar o mouse */
-        .btn-primary:hover {
+        .btn-home:hover {
             background-color: #d46a35;
             border-color: #d46a35;
+        }
+        .logo {
+            display: block;
+            margin: auto;
+            width: 10%;
+            align-items: center;
         }
     </style>
 </head>
 
 <body>
 
+    <div class="progress" style="height: 10px;">
+        <div class="progress-bar" style="width: 100%; background-color: #505b4b;"></div>
+    </div>
+
+    <div>
+        <a href="index.html"><img class="logo mt-4" src="Imagens/logo/marrom escuro.png" alt="Le Croissant Logo"></a>
+    </div>
+
     <div class="container my-5 px-4">
         <div class="row justify-content-center">
-            <div class="col-md-8 col-lg-6 completed-container text-center">
+            <div class="col-md-8 col-lg-6 concluido-container text-center">
                 <!-- Ícone de sucesso -->
                 <i class="bi bi-check-circle-fill" style="font-size: 4rem; color: #e57a44;"></i>
                 <h2 class="mt-4">Compra Finalizada!</h2>
@@ -51,16 +67,23 @@
                 <!-- Resumo do pedido -->
                 <div class="order-summary my-4">
                     <h4>Resumo do Pedido:</h4>
-                    <p><strong>Produtos:</strong> <br>
-                        Chá <br>
-                        Cookie <br>
-                        Madeleine </p>
+                    <!-- Listagem dos itens do pedido com quantidades -->
+
+                    <p><strong>Produto:</strong> Chá</p>
                     <p><strong>Quantidade:</strong> 1</p>
-                    <p><strong>Total:</strong> R$12,00</p>
+                    <br>
+                    <p><strong>Produto:</strong> Cookie</p>
+                    <p><strong>Quantidade:</strong> 2</p>
+                    <br>
+                    <p><strong>Produto:</strong> Madeleine</p>
+                    <p><strong>Quantidade:</strong> 3</p>
+                    <br>
+                    <!-- Exibição do total com desconto aplicado -->
+                    <p><strong>Total (com 10% de desconto):</strong> R$27,00</p>
                 </div>
 
                 <!-- Botão para voltar à página inicial -->
-                <a href="index.html" class="btn btn-primary mt-4">Voltar para a Página Inicial</a>
+                <a href="index.html" class="btn btn-home mt-4">Voltar para a Página Inicial</a>
             </div>
         </div>
     </div>
