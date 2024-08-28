@@ -16,6 +16,11 @@
     text-indent: 10px;
 }
 
+/* hover para os links da navbar */
+.navbar-nav .nav-link:hover {
+    color: #b76943 !important;
+}
+
 .btn-enviar {
     background-color: #392b1e;
     color: #f0ebd8;

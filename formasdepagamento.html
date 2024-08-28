@@ -37,82 +37,96 @@
             background-color: #d46a35;
             border-color: #d46a35;
         }
+
+        .logo {
+            display: block;
+            margin: auto;
+            width: 10%;
+            align-items: center;
+        }
     </style>
 </head>
 
 <body>
+    <div class="progress" style="height: 10px;">
+        <div class="progress-bar" style="width: 33%; background-color: #505b4b;"></div>
+    </div>
+
+    <div>
+        <a href="index.html"><img class="logo mt-4" src="Imagens/logo/marrom escuro.png" alt="Le Croissant Logo"></a>
+    </div>
 
     <div class="container my-5 px-4">
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-6 container-de-escolha">
-                <h2 class="mb-4">Escolha a Forma de Pagamento</h2>
+                <h2 class="mb-4 d-flex justify-content-center">Finalizar a compra</h2>
                 <div class="mb-3">
-                    <label for="Número do cartão" class="form-label"></label>
-                    <input type="text" class="form-control" id="Número do Cartão" placeholder="1234 5678 9012 3456"
-                        required>
-                </div>
-                <div class="mb-3">
-                    <label for="Nome no cartão" class="form-label">Nome no Cartão</label>
-                    <input type="text" class="form-control" id="Nome no cartão" placeholder="Nome do Titular" required>
+                    <label for="Nome do cliente" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="Nome do cliente" placeholder="Nome" required>
                 </div>
                 <div class="mb-3">
-                    <label for="Data de validade" class="form-label">Data de Validade</label>
-                    <input type="text" class="form-control" id="Data de validade" placeholder="MM/AA" required>
+                    <label for="Endereço de entrega" class="form-label">Endereço de entrega</label>
+                    <input type="text" class="form-control" id="Endereço de entrega"
+                        placeholder="ex: Rua da alegria, 123" required>
                 </div>
-                    <form id="formdepagamento">
-                        <div class="mb-3">
-                            <label for="metododepagamento" class="form-label">Método de Pagamento</label>
-                            <select id="metododepagamento" class="form-select" required>
-                                <option value="" disabled selected>Selecione uma opção</option>
-                                <option value="cartao">Cartão de Crédito</option>
-                                <option value="pix">Pix</option>
-                                <option value="dinheiro">Dinheiro</option>
-                            </select>
-                        </div>
-                        <!--Botão de prosseguir para a página escolhida de acordo com a forma de pagamento-->
-                        <button type="button" class="btn btn-continuar"
-                            onclick="procederparaopagamento()">Continuar</button>
-                    </form>
+                <div class="mb-3">
+                    <label for="Telefone" class="form-label">Telefone</label>
+                    <input type="text" class="form-control" id="Telefone" placeholder="Telefone" required>
                 </div>
+                <form id="formdepagamento">
+                    <div class="mb-3">
+                        <label for="metododepagamento" class="form-label">Método de Pagamento</label>
+                        <select id="metododepagamento" class="form-select" required>
+                            <option value="" disabled selected>Selecione uma opção</option>
+                            <option value="cartao">Cartão de Crédito</option>
+                            <option value="pix">Pix</option>
+                            <option value="dinheiro">Dinheiro</option>
+                        </select>
+                    </div>
+                    <!--Botão de prosseguir para a página escolhida de acordo com a forma de pagamento-->
+                    <button type="button" class="btn btn-continuar"
+                        onclick="procederparaopagamento()">Continuar</button>
+                </form>
             </div>
         </div>
+    </div>
 
-        <script>
-            function procederparaopagamento() {
-                const metododepagamento = document.getElementById('metododepagamento').value;
-                let url = '';
+    <script>
+        function procederparaopagamento() {
+            const metododepagamento = document.getElementById('metododepagamento').value;
+            let url = '';
 
-                // Direcionamento para página dependendo da escolha
-                switch (metododepagamento) {
-                    case 'cartao':
-                        url = 'cartao.html';
-                        break;
-                    case 'pix':
-                        url = 'pix.html';
-                        break;
-                    case 'dinheiro':
-                        url = 'dinheiro.html';
-                        break;
-                    default:
-                        alert('Selecione uma forma de pagamento.');
-                        return;
-                }
-
-                // Redirecionar para a página apropriada
-                window.location.href = url;
+            // Direcionamento para página dependendo da escolha
+            switch (metododepagamento) {
+                case 'cartao':
+                    url = 'cartao.html';
+                    break;
+                case 'pix':
+                    url = 'pix.html';
+                    break;
+                case 'dinheiro':
+                    url = 'dinheiro.html';
+                    break;
+                default:
+                    alert('Selecione uma forma de pagamento.');
+                    return;
             }
-        </script>
 
-        <div vw class="enabled">
-            <div vw-access-button class="active"></div>
-            <div vw-plugin-wrapper>
-                <div class="vw-plugin-top-wrapper"></div>
-            </div>
+            // Redirecionar para a página apropriada
+            window.location.href = url;
+        }
+    </script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
-        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-        <script>
-            new window.VLibras.Widget('https://vlibras.gov.br/app');
-        </script>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 
 </body>
 

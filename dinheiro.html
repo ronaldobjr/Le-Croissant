@@ -33,10 +33,24 @@
             background-color: #d46a35;
             border-color: #d46a35;
         }
+        .logo {
+            display: block;
+            margin: auto;
+            width: 10%;
+            align-items: center;
+        }
     </style>
 </head>
 
 <body>
+
+    <div class="progress" style="height: 10px;">
+        <div class="progress-bar" style="width: 66%; background-color: #505b4b;"></div>
+    </div>
+
+    <div>
+        <a href="index.html"><img class="logo mt-4" src="Imagens/logo/marrom escuro.png" alt="Le Croissant Logo"></a>
+    </div>
 
     <div class="container my-5 px-4">
         <div class="row justify-content-center">
@@ -44,7 +58,7 @@
                 <h2 class="mb-4">Pagamento em Dinheiro</h2>
                 <p class="mb-4">Para pagamento em dinheiro, por favor, apresente o valor exato ao entregador na entrega
                     do seu pedido.</p>
-                <button type="button" class="btn btn-primary" onclick="confirmCash()">Confirmar Pagamento</button>
+                <button type="button" class="btn btn-primary" onclick="confirmardinheiro()">Confirmar Pagamento</button>
             </div>
         </div>
     </div>
@@ -52,7 +66,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
     <script>
-        function confirmCash() {
+        function confirmardinheiro() {
             alert('Pagamento em Dinheiro confirmado!');
         }
     </script>
