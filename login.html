@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="CSS/stylelogin.css">
     <!-- Ícones do bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         /* hover para os links da navbar */
         .navbar-nav .nav-link:hover {
@@ -31,35 +33,39 @@
 
                 <div class="modal-header">
                     <div>
-                        <img src="Imagens/Sprint 3/logo/creme.png" alt="Logo Le Croissant" class="w-120" >
-                    </div>                    
+                        <img src="Imagens/Sprint_3/logo/creme.png" alt="Logo Le Croissant" class="w-120">
+                    </div>
                 </div>
                 <h3 id="JanelaModalLabel" class="modal-title">Bem-vindo(a)! Faça seu Login</h3>
                 <br>
                 <div class="modal-body">
                     <form action="#" method="post">
                         <br>
-                        
+
                         <!-- E-MAIL -->
                         <div class="col-12; input">
-                            <input class="email" type="email" name="email" id="email" placeholder="Digite seu e-mail" required> <i class="fa-solid fa-envelope"></i>
+                            <input class="email" type="email" name="email" id="email" placeholder="Digite seu e-mail"
+                                required> <i class="fa-solid fa-envelope"></i>
                         </div>
-                        
+
                         <br><br>
 
                         <!-- SENHA -->
                         <div class="col-12; input">
-                            <input class="senha" type="password" name="password" id="senha" placeholder="Digite sua senha" required> <i class="fa-solid fa-lock"></i>
+                            <input class="senha" type="password" name="password" id="senha"
+                                placeholder="Digite sua senha" required> <i class="fa-solid fa-lock"></i>
                         </div>
 
                         <br>
 
                         <!-- BOTÃO DE Login -->
                         <a style="text-decoration: none;" href="index.html">
-                            <button type="button" id="b_login" class="btn; col-lg-3 col-md-4 col-sm-4" style="display: block;" onclick="login()">CONCLUIR</button>
-                        </a>   
-                            
-                        <a href="sejaumcliente.html" class="cadast"><u>Ainda não tem uma conta? Cadastre-se agora!</u></a>
+                            <button type="button" id="b_login" class="btn; col-lg-3 col-md-4 col-sm-4"
+                                style="display: block;" onclick="login()">CONCLUIR</button>
+                        </a>
+
+                        <a href="sejaumcliente.html" class="cadast"><u>Ainda não tem uma conta? Cadastre-se
+                                agora!</u></a>
 
                         <a href="index.html" style="text-decoration: none;">
                             <button type="button" id="btn2" class="btn; col-lg-1 col-md-3 col-sm-3">Voltar</button>
@@ -117,7 +123,7 @@
                 alert('Conta não encontrada. Faça seu cadastro!')      
             }
         }
-        
+
     </script>
 
 
@@ -129,7 +135,8 @@
             <a href="https://wa.me/5514998899701?text=sua%20mensagem" target="_blank" style="color: #392b1e ;">
                 <i class="bi bi-whatsapp fs-3 me-3"></i>
             </a>
-            <a href="https://www.instagram.com/lecroissantcafeteria?igsh=MTRqc3BndHl5cGI5bQ==" target="_blank" style="color: #392b1e ;">
+            <a href="https://www.instagram.com/lecroissantcafeteria?igsh=MTRqc3BndHl5cGI5bQ==" target="_blank"
+                style="color: #392b1e ;">
                 <i class="bi bi-instagram fs-3"></i>
             </a>
         </div>
@@ -144,6 +151,18 @@
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
 
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
 
 </body>
+
 </html>
