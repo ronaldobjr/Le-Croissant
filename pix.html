@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Ícone da página -->
-    <link rel="shortcut icon" href="Imagens/Sprint 3/íconeLEC.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="Imagens/Sprint_3/íconeLEC.ico" type="image/x-icon">
     <style>
         /* Background da página */
         body {
@@ -49,7 +49,7 @@
                     fazer a transferência.</p>
                 <div class="text-center">
                     <!-- QR-code Pix -->
-                    <img src="Imagens/Sprint 3/QR-PIX.png" alt="QR Code" class="img-fluid mb-3">
+                    <img src="Imagens/Sprint_3/QR-PIX.png" alt="QR Code" class="img-fluid mb-3">
                     <p>Chave Pix: <strong>sei-lá-eu@gmail.com</strong></p>
                 </div>
                 <button type="button" class="btn btn-finalizar" onclick="confirmarPix()">Confirmar Pagamento</button>
@@ -63,6 +63,17 @@
         function confirmarPix() {
             alert('Pagamento via Pix confirmado!');
         }
+    </script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 
 </body>

@@ -11,7 +11,7 @@
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Ícone da página -->
-    <link rel="shortcut icon" href="Imagens/Sprint 3/íconeLEC.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="Imagens/Sprint_3/íconeLEC.ico" type="image/x-icon">
     <style>
         .card {
             display: flex;
@@ -75,7 +75,7 @@
     <nav class="navbar navbar-expand-lg" style="background-color: #505b4b;">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="Imagens/Sprint 3/logo/creme.png" alt="Le Croissant Logo" width="50" height="50">
+                <img src="Imagens/Sprint_3/logo/creme.png" alt="Le Croissant Logo" width="50" height="50">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -112,11 +112,9 @@
             <div class="col-lg-8 mx-auto">
                 <!-- Contêiner para Itens do Carrinho -->
                 <div class="cart-container">
-                    <h3 class="titulo">SUA SACOLA</h3>
-                    <br>
                     <!-- Card de Notícia 1 -->
-                    <div class="card mb-3" data-price="6.00">
-                        <div class="row g-0">
+                    <div class="card mb-3" style="max-width: 900px;" data-price="6.00">
+                        <div class="row">
                             <div class="col-md-4">
                                 <img src="img/cha.jpg" class="img-fluid rounded-start card-img-top" alt="Chá">
                             </div>
@@ -176,13 +174,13 @@
                 <div class="total-section d-flex justify-content-between align-items-center">
                     <h3>Total: R$ <span id="total-price">25,50</span></h3>
                     <button class="btn btn-success">Finalizar Compra</button>
-                </div>
-                <br>
-                <!-- Campo para inserir o código do cupom -->
-                <div class="coupon-section form-group col-md-3">
-                    <label for="coupon-code" class="form-label">Código do Cupom:</label>
-                    <input type="text" id="coupon-code" class="form-control" placeholder="Insira seu cupom">
-                    <button id="apply-coupon" class="btn btn-primary mt-2">Aplicar Cupom</button>
+                    <!-- Campo para inserir o código do cupom -->
+<div class="coupon-section mb-3">
+    <label for="coupon-code" class="form-label">Código do Cupom:</label>
+    <input type="text" id="coupon-code" class="form-control" placeholder="Insira seu cupom">
+    <button id="apply-coupon" class="btn btn-primary mt-2">Aplicar Cupom</button>
+</div>
+
                 </div>
             </div>
         </div>
@@ -193,22 +191,22 @@
             let total = 0;
             const cards = document.querySelectorAll('.card');
 
-            for (let i = 0; i < cards.length; i++) {
-                var card = cards[i];
-                var preco = parseFloat(card.getAttribute('data-price'));
-                var quantidade = parseInt(card.querySelector('input[type="number"]').value);
+    for (let i = 0; i < cards.length; i++) {
+        var card = cards[i];
+        var price = parseFloat(card.getAttribute('data-price'));
+        var quantity = parseInt(card.querySelector('input[type="number"]').value);
 
-                // Verifica se o preço e a quantidade são válidos antes de adicionar ao total
-                if (!isNaN(preco) && !isNaN(quantidade) && quantidade > 0) {
-                    total = total + (preco * quantidade);
-                }
-            }
+        // Verifica se o preço e a quantidade são válidos antes de adicionar ao total
+        if (!isNaN(price) && !isNaN(quantity) && quantity > 0) {
+            total = total + (price * quantity);
+        }
+    }
 
-            // Aplicação do desconto
-            const couponCode = document.getElementById('coupon-code').value.trim();
-            if (couponCode === 'DESCONTO10') { // Verifica se o cupom é "DESCONTO10"
-                total = total * 0.9; // Aplica 10% de desconto
-            }
+    // Aplicar desconto se o cupom for válido
+    const couponCode = document.getElementById('coupon-code').value.trim();
+    if (couponCode === 'DESCONTO10') { // Verifica se o cupom é "DESCONTO10"
+        total = total * 0.9; // Aplica 10% de desconto
+    }
 
             // Verifica se o total é válido antes de atualizar o elemento HTML
             if (!isNaN(total) && total >= 0) {
@@ -227,9 +225,9 @@
 
             applyCouponButton.addEventListener('click', calculateTotalPrice);
 
-            calculateTotalPrice(); // Cálculo inicial
-        });
-    </script>
+    calculateTotalPrice(); // Cálculo inicial
+});
+    </script>
 </body>
 
 </html>
