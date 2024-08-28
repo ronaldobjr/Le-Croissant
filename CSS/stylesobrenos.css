@@ -86,24 +86,25 @@ p.event2{
     clear: both;
 }
 
-img.side{
-    margin: 15px;
-    width: 600px;
-    float:left;
-    margin-left:60px;
+img.dir{
+    margin-left:20px;
+    height: 100%;
+    float: right;
+    margin: 20px;
+    margin-right: 20px;
 }
 
-img.side2{
-    margin: 15px;
-    width: 600px;
-    float:left;
+img.esq{
     margin-right: 20px;
+    height: 100%;
+    float: left;
+    margin: 20px;
+    margin-left: 20px;
 }
 
 .cent{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 .float-evento{
