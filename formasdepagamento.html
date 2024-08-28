@@ -57,7 +57,8 @@
                         </select>
                     </div>
                     <!--Botão de prosseguir para a página escolhida de acordo com a forma de pagamento-->
-                    <button type="button" class="btn btn-continuar" onclick="procederparaopagamento()">Continuar</button>
+                    <button type="button" class="btn btn-continuar"
+                        onclick="procederparaopagamento()">Continuar</button>
                 </form>
             </div>
         </div>
@@ -87,6 +88,17 @@
             // Redirecionar para a página apropriada
             window.location.href = url;
         }
+    </script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
     </script>
 
 </body>
