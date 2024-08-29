@@ -1,7 +1,9 @@
+/*corpo do site*/
 body{
     background-color: #f0ebd8;
 }
 
+/*estilo do h2*/
 h2{
     color: #392b1e;
     text-align: center;
@@ -13,6 +15,7 @@ h2{
     color: #b76943 !important;
 }
 
+/*rodapé*/
 footer{
     background-color: #505b4b; 
     color: #f0ebd8; 
@@ -20,12 +23,14 @@ footer{
     text-align: center;
 }
 
+/*estilo do p*/
 p{
     margin: 20px;
     text-align: justify;
     text-indent: 20px;
 }
 
+/*parágrafo com imagem do lado*/
 p.comImg{
     margin: 40px;
     padding: 10px;
@@ -34,11 +39,13 @@ p.comImg{
     margin-bottom: 10px;
 }
 
+/*imagem banner inauguração*/
 .inaug{
     width: 100%;
     margin: 10px;
 }
 
+/*p evento*/
 p.event{
     float: left;
     margin: 20px;
@@ -48,6 +55,7 @@ p.event{
     margin-bottom: 0;
 }
 
+/*p evento*/
 p.event2{
     float: left;
     margin: 20px;
@@ -57,12 +65,14 @@ p.event2{
     margin-bottom: 10px;
 }
 
+/*titulo evento*/
 .evento{
     color: #392b1e;
     text-align: center;
     margin-top: 30px;
     margin-left: 30px;
 }
+
 
 .float{
     float: left;
